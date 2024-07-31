@@ -23,10 +23,7 @@ pacman::p_load(
 
 
 # Source analyze grades function
-source('analyze_grades_function.R')
-
-# Helpful command for previewing bslib themes:
-# bslib::bs_theme_preview()
+source('app_files/analyze_grades_function.R')
 
 
 
