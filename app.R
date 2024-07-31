@@ -4,6 +4,12 @@
 # 0. Load Packages and Functions ---------------------------------------------
 
 
+suppressPackageStartupMessages(
+  if(!requireNamespace('pacman')) {
+    install.packages('pacman', dependencies = TRUE)
+  }
+)
+
 pacman::p_load(
     shiny,
     DT,
