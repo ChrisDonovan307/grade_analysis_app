@@ -31,5 +31,4 @@ shiny::runGitHub('ChrisDonovan307/grade_analysis_app')
 
 Inside the app, use the green “How to use this app” button in the top
 left for more specific instructions. There is also a file of simulated
-data to test it out on in the `app_files` directory that includes some
-missing data and horrendous column names. That’s all!
+data to test it out on in the `app_files` directory. That’s it!
