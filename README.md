@@ -1,7 +1,8 @@
 Grade Analysis App
 ================
 Chris Donovan
-July 31, 2024
+
+August 03, 2024
 
 - [Introduction](#introduction)
 - [Using the App](#using-the-app)
@@ -25,7 +26,7 @@ first make sure RShiny is installed. Then, simply use
 run:
 
 ``` r
-# install.packages('RShiny')
+# install.packages('shiny')
 shiny::runGitHub('ChrisDonovan307/grade_analysis_app')
 ```
 
