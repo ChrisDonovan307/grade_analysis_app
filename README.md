@@ -1,8 +1,8 @@
-Grade Analysis App
+CDAE 1020 Grade Analysis App
 ================
 Chris Donovan
 
-August 03, 2024
+February 02, 2025
 
 - [Introduction](#introduction)
 - [Using the App](#using-the-app)
@@ -16,6 +16,8 @@ creates a series of interactive visualizations and tests organized by
 cohort. It also has a couple features for cleaning up assignment names,
 removing zeroes from the analysis, and splitting cohort names (assuming
 TA names are separated from cohort numbers by a consistent character).
+
+<img src="app_files/app_screenshot.png" width="75%" style="display: block; margin: auto;" />
 
 # Using the App
 
