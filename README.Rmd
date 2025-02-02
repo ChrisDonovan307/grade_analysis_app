@@ -1,5 +1,5 @@
 ---
-title: "Grade Analysis App"
+title: "CDAE 1020 Grade Analysis App"
 author: "Chris Donovan\n"
 date: "`r format(Sys.Date(), '%B %d, %Y')`"
 output: 
