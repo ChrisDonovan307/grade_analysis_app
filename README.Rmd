@@ -24,6 +24,8 @@ knitr::opts_chunk$set(
 
 This is a Shiny app designed to help analyze grades across cohorts in the course CDAE 1020: World Food, Population, and Development. It allows you to upload a .csv or .xlsx file, select the relevant columns, and creates a series of interactive visualizations and tests organized by cohort. It also has a couple features for cleaning up assignment names, removing zeroes from the analysis, and splitting cohort names (assuming TA names are separated from cohort numbers by a consistent character).
 
+<img src="app_files/app_screenshot.png" width="75%" style="display: block; margin: auto;" />
+
 # Using the App
 
 This app will not be deployed to a server so as to avoid hurling sensitive information around the internet. To launch the app locally, first make sure RShiny is installed. Then, simply use `shiny::runGitHub()` from the R console with the repo information to run:
