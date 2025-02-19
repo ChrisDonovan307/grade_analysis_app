@@ -240,7 +240,7 @@ server <- function(input, output) {
 
   rval_df <- eventReactive(input$file, {
     # Make sure file is uploaded
-    req(input$file)
+    req(input$file, input$usernames)
 
     # Read data frame from uploaded file
     if (tools::file_ext(input$file$name) == "csv") {
@@ -250,6 +250,9 @@ server <- function(input, output) {
     } else {
       stop("Unsupported file format")
     }
+
+    # Remove student view account with _sv in username
+    df <- df[grepl('_sv', df[[input$usernames]]) == FALSE, ]
 
     # Reduce length of column names so they fit in the dropdown
     colnames(df) <- str_sub(colnames(df), 1, 40)

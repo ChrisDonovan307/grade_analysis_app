@@ -121,18 +121,18 @@ analyze_grades <- function(df,
     }
 
     # filter out _sv if username_column is provided
-    if (!is.null(username_column)) {
-        df <- df |>
-            filter(str_detect({{ username_column }}, '_sv') == FALSE)
-
-    } else {
-        warning(
-            paste(
-                '** Did NOT check or remove student view accounts.',
-                'To do so, you must include an input for the',
-                'username_column argument **\n'),
-            call. = FALSE)
-    }
+    # if (!is.null(username_column)) {
+    #     df <- df |>
+    #         filter(nquo(username_column), '\\_sv') == FALSE)
+    #
+    # } else {
+    #     warning(
+    #         paste(
+    #             '** Did NOT check or remove student view accounts.',
+    #             'To do so, you must include an input for the',
+    #             'username_column argument **\n'),
+    #         call. = FALSE)
+    # }
 
     # Select rows, rename columns, remove NA cohorts
     df <- df |>
@@ -193,7 +193,7 @@ analyze_grades <- function(df,
     # Histogram -----
     histogram <- dat |>
         ggplot(aes(x = assignment)) +
-        geom_histogram(binwidth = 0.5,
+        geom_histogram(binwidth = 1,
                        fill = 'grey',
                        color = 'black') +
         theme_classic() +
